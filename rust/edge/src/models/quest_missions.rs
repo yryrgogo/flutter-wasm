@@ -1,10 +1,10 @@
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 use sqlx::{
-    postgres::{PgQueryResult, PgRow},
+    postgres::{PgQueryResult},
     FromRow, PgPool,
 };
 
-#[derive(Debug, FromRow, Serialize)]
+#[derive(Debug, FromRow, Deserialize, Serialize)]
 pub struct QuestMissions {
     quest_id: i32,
     mission_id: i32,

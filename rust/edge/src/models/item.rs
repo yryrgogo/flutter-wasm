@@ -1,10 +1,10 @@
-use serde::Serialize;
+use serde::{Deserialize, Serialize};
 use sqlx::{
     postgres::{PgPool, PgQueryResult, PgRow},
     FromRow,
 };
 
-#[derive(Debug, FromRow, Serialize)]
+#[derive(Debug, FromRow, Deserialize, Serialize)]
 pub struct Item {
     pub id: i32,
     pub name: String,

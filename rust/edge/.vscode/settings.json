@@ -1,0 +1,18 @@
+{
+	"rust-analyzer.linkedProjects": [
+		"./Cargo.toml",
+	],
+	"cSpell.words": [
+		"chrono",
+		"Iden",
+		"PGDATABASE",
+		"PGHOST",
+		"PGPASSWORD",
+		"PGPORT",
+		"PGUSER",
+		"sqlx",
+		"struct",
+		"varchar"
+	],
+	"rust-analyzer.showUnlinkedFileNotification": false
+}
